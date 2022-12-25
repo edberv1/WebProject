@@ -16,7 +16,7 @@ function donatePlants() {
     }
 
     if(!(numberRegex.test(number))) {
-        document.getElementById('errornumber').innerHTML="Please enter a valid phone number"; 
+        document.getElementById('errornumber').innerHTML="Please enter a valid phone number..."; 
        return false;
        }
     else{
