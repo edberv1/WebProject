@@ -24,7 +24,7 @@ var passwordRegex=/^[A-Z]{1}[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]{6}$/;
    }
    else{
     document.getElementById('errorpassword').innerHTML="";
-    alert("You've logged in successfully, you can Donate now! Thank you!");  
+    alert("You have logged in successfully, you can Donate now! Thank you!");  
    }
   
 }  
