@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <nav>
+        <ul type="none" id="nav">
+            <div class="logo">
+                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.html">GiveHelp</a></li>
+            </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="weather.html">Extras</a></li>
+            <li> <a href="login.html">Login</a> </li>
+            <li> <a href="register.html">Register</a> </li>
+        </ul>
+
+        <ul type="none">
+            
+        </ul>
+    </nav>
+
+    <main>
+        <div class="formStyle">
+            <p id="registerForm">Register</p>
+            <form action="./login.html" name="myForm" onsubmit="return validateFormRegister()">
+            <label for="name" class="arrangeLabel" id="pak1">Name: </label><br>
+            <input type="text" placeholder="Enter name..." name="name" id="emaili"><br>
+            <span class="error" id="errorname"></span><br>
+
+            <label for="surname" class="arrangeLabel" id="pak2">Surname: </label><br>
+            <input type="text" placeholder="Enter surname..." name="surname" id="emaili"><br>
+            <span class="error" id="errorsurname"></span><br>
+            
+            <label for="email" class="arrangeLabel" id="pak3">Email: </label><br>
+            <input type="email" placeholder="Enter email..." name="email" id="emaili"><br>
+            <span class="error" id="erroremail"></span><br>
+
+            <label for="password" class="arrangeLabel" id="pak4">Password: </label><br>
+            <input type="password" placeholder="Enter password..." name="password" id="emaili"><br> 
+            <span class="error" id="errorpassword"></span><br>
+            
+            <input type="submit" value="Register" id="btn"><br>
+            </form>
+            
+        </div>
+        
+        
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>

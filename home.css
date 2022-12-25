@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color:  wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 28px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.logo>li>a{
+    color: black;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/6451924.jpg");  
+}
+main{
+    height: 100%;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color:  wheat;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+}
+
+footer>img{
+    height: 20px;
+}
+.div1{
+    width: 50%;
+
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div2>ul>li>a>img{
+    width: 120px;
+    height: 120px;
+
+}
+.heading h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: serif; 
+    text-align: center;
+    margin-top: 35px;
+    
+    }
+.heading{
+    background-image: url("https://wallpaperaccess.com/full/6451924.jpg");
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: wheat;
+    
+}   
+
+.btnA{
+    text-decoration: none;
+    color: black;
+}
+
+.button :hover{
+    color: aliceblue;
+}
+
+#mainColums{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main{
+    width: 50%;
+    height: 50%;
+}
+.mainimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 50px;
+    background-image: url("https://wallpaperaccess.com/full/6451924.jpg");
+}
+.btn-left{
+    width: 80px;
+    height: 40px;
+    background-color:  wheat;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+.btn-right{
+    width: 80px;
+    height: 40px;
+    background-color:  wheat;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+.leftcolum {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+
+}
+
+.rightcolum {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.clothes {
+    width: 100%;
+    border-radius: 30px;
+    
+}
+
+.money {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color:  green;
+    
+}   
+
+.btnA{
+    text-decoration: none;
+    color: white;
+}
+
+.button :hover{
+    color: wheat; 
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(245, 222, 179,0.8);
+    
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

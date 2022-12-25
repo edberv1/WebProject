@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+    <nav>
+        <ul type="none" id="nav">
+            <div class="logo">
+                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.html">GiveHelp</a></li>
+            </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="weather.html">Extras</a></li>
+            <li> <a href="login.html">Login</a> </li>
+            <li> <a href="register.html">Register</a> </li>
+        </ul>
+
+        <ul type="none">
+            
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="formStyle">
+            <p id="loginForm">Login</p>
+            <form action="./home.html" name="myForm" onsubmit="return validateFormLogin()">
+                
+            <label for="email" class="arrangeLabel" id="pak1">Email: </label>
+            <input type="email" placeholder="Enter email" id="emaili" name="email"><br>
+            <span class="error" id="erroremail"></span><br>
+            
+            <label for="password" class="arrangeLabel" id="pak2">Password: </label>
+            <input type="password" placeholder="Enter password" id="passi" name="password"><br>
+            <span class="error" id="errorpassword"></span>
+
+            <p id="dont">Not a memeber?<a href="register.html"> Register here </a></p>
+            <input type="submit" value="Login" id="btn"><br>
+            <h1 id="testim"></h1>
+            </form>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
