@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../CSS/home.css">
     <title>Weather</title>
     <style>
         input{
@@ -42,7 +42,7 @@ body{
 <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
                 <li><a href="home.php">GiveHelp</a></li>
             </div>
             <li><a href="home.php">Home</a></li>
@@ -75,6 +75,6 @@ body{
     </center>
 
 
-    <script src="weather.js"></script> 
+    <script src="../JS/weather.js"></script> 
 </body>
 </html>

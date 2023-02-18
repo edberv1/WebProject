@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
     <title>Main Dashboard</title>
 </head>
 <body>
+
     <h1>Welcome to the Main Dashboard, Admin</h1>
 	
     <div class="container">

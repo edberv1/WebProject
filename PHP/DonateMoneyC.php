@@ -31,7 +31,7 @@ public function insert(){
         if ($sql = $this->conn->query($query)) {
 
             echo "<script>alert('Thanks for the donation!);</script>";
-            echo "<script>window.location.href = 'index.php';</script>";
+            echo "<script>window.location.href = 'home.php';</script>";
         }
 
     else{
@@ -60,7 +60,7 @@ public function check(){
            if($row['email'] == $email){
             
             echo "<script>alert('Thanks for the donation!);</script>";
-            echo "<script>window.location.href = 'index.php';</script>";
+            echo "<script>window.location.href = 'home.php';</script>";
             $this->insert();
            }
           

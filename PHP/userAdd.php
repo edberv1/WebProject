@@ -4,7 +4,7 @@
   <title>Dashboard</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="userDashboard.css">
+  <link rel="stylesheet" href="../CSS/userDashboard.css">
 </head>
 <body>
 <a class="navbar-brand" href="dashboard.php">Main Dashboard <</a>

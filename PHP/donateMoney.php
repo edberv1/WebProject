@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donateMoney.css">
+    <link rel="stylesheet" href="../CSS/donateMoney.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
                 <li><a href="home.php">GiveHelp</a></li>
             </div>
             <li><a href="home.php">Home</a></li>
@@ -51,7 +51,7 @@
             $check = $donateMoneyRegister->check();
         ?>
         
-        <form name="myForm" onsubmit="return donateMoney()">
+        <form name="myForm" onsubmit="return donateMoney()" method="post">
             <div>
                 <label for="formName" class="form-label">Name: <br></label>
                 <input type="text" class="formStyle" id="formName" name="name" placeholder="Name here..."><br>
@@ -84,7 +84,7 @@
                 <span class="error" id="errortext"></span>
             </div><br>
             
-            <input type="submit" value="Donate" id="dnButt"><br></input>
+            <input type="submit" name="submit" value="Donate" id="dnButt"><br></input>
             </form>
 
     </div>
@@ -104,9 +104,9 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="../Assets/logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>
-    <script src="JS\money.js"></script>
+    <script src="../JS/money.js"></script>
 </html>

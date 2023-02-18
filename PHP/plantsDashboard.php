@@ -4,16 +4,16 @@
   <title>Dashboard</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="userDashboard.css">
+  <link rel="stylesheet" href="../CSS/userDashboard.css">
 </head>
 <body>
 
-<a class="navbar-brand" href="dashboard.php">Main Dashboard <</a>
+  <a class="navbar-brand" href="dashboard.php">Main Dashboard <</a>
 
   <div class="container">
-    <h1>Users that donated money!</h1>
+    <h1>Users that donated plants!</h1>
     
-     <a href="moneyAdd.php">  <button type="submit" name="submit" id="userAdd">Add Donation</button><br> <br> </a> 
+     <a href="plantsAdd.php">  <button type="submit" name="submit" id="userAdd">Add Donation</button><br> <br> </a> 
     
     <table>
       <thead>
@@ -23,17 +23,17 @@
           <th>Surname</th>
           <th>Email</th>
           <th>Phone Number</th>
-          <th>Money(€)</th>
+          <th>Plants</th>
           <th>Action</th>
         </tr>
       </thead>
       <tbody>
       <?php
  
-        include 'DonateMoneyC.php';
-        $money = new DatabaseDonateMoney();
-        $rows = $money->fetch();
-      
+        include 'DonatePlantsC.php';
+        $plants = new DatabaseDonatePlants();
+        $rows = $plants->fetch();
+       
         if(!empty($rows)){
         foreach($rows as $row){ 
        ?>
@@ -44,10 +44,9 @@
                 <td><?php echo $row['surname']; ?></td>
                 <td><?php echo $row['email']; ?></td>
                 <td><?php echo $row['phoneNumber']; ?></td>
-                <td><?php echo $row['money']; ?></td>
+                <td><?php echo $row['plants']; ?></td>
                 <td>
-                  <a href="moneyDelete.php?id=<?php echo $row['id']; ?>" class="btn btn1">Delete</a>
-                  <a href="moneyEdit.php?id=<?php echo $row['id']; ?>" class="btn btn2">Edit</a>
+                  <a href="plantsDelete.php?id=<?php echo $row['id']; ?>" class="btn btn1">Delete</a>
                   
                 </td>
               </tr>

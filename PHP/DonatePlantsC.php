@@ -11,7 +11,7 @@ class DatabaseDonatePlants{
         try{
             $this->conn = new mysqli($this->server, $this->username, $this->password, $this->database);
         }catch(Exception $e){
-            echo 'Connection Failed' .$e->getMessage();
+            echo 'Connection was not successful!' .$e->getMessage();
         }       
     }
 
@@ -28,7 +28,7 @@ class DatabaseDonatePlants{
             if ($sql = $this->conn->query($query)) {
 
                 echo "<script>alert('Thanks for the donation!);</script>";
-                echo "<script>window.location.href = 'index.php';</script>";
+                echo "<script>window.location.href = 'home.php';</script>";
             }
     
         else{
@@ -57,7 +57,7 @@ class DatabaseDonatePlants{
                if($row['email'] == $email){
                 
                 echo "<script>alert('Thanks for the donation!);</script>";
-                echo "<script>window.location.href = 'index.php';</script>";
+                echo "<script>window.location.href = 'home.php';</script>";
                 $this->insert();
                }
               
@@ -89,7 +89,7 @@ class DatabaseDonatePlants{
                if($row['email'] == $email){
                 
                 echo "<script>alert('Thanks for the donation!);</script>";
-                echo "<script>window.location.href = 'index.php';</script>";
+                echo "<script>window.location.href = 'home.php';</script>";
                 $this->insert();
                }
               

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonatePlants</title>
-    <link rel="stylesheet" href="plants.css">
+    <link rel="stylesheet" href="../CSS/plants.css">
 </head>
 <body>
     <header>
     <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
                 <li><a href="home.php">GiveHelp</a></li>
             </div>
             <li><a href="home.php">Home</a></li>
@@ -79,7 +79,7 @@
             <span class="error" id="errortext"></span>
         </div><br>
         
-        <input type="submit" value="Donate" id="dnButt"><br> <br></input>
+        <input type="submit" name="submit" value="Donate" id="dnButt"><br> <br></input>
         </form>
 
     </div>
@@ -102,10 +102,10 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="../Assets/logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>
-    <script src="JS\plants.js"></script>
+    <script src="../JS/plants.js"></script>
 </body>
 </html>

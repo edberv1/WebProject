@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../CSS/about.css">
     <title>About</title>
 </head>
 <body>
 <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
                 <li><a href="home.php">GiveHelp</a></li>
             </div>
             <li><a href="home.php">Home</a></li>
@@ -73,7 +73,7 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="../Assets/logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>

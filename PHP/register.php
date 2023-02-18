@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../CSS/register.css">
 </head>
 <body>
 
 <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
                 <li><a href="home.php">GiveHelp</a></li>
             </div>
             <li><a href="home.php">Home</a></li>
@@ -54,21 +54,15 @@
             <label for="password" class="arrangeLabel" id="pak4">Password: </label><br>
             <input type="password" placeholder="Enter password..." name="password" id="emaili"><br> 
             <span class="error" id="errorpassword"></span><br>
-            
-            <label for="user_type" class="arrangeLabel" id="pak5">Role: </label>
-                <select name="user_type" id="selection" class="test">
-                <option value="user">User</option>
-                <option value="admin">Administrator</option>
-                </select><br>
 
-            <input type="submit" value="Register" id="btn"><br>
+            <input type="submit" name="submit" value="Register" id="btn"><br>
             </form>
             
         </div>
         
-        
+
     </main>
 
-    <script src="register.js"></script>
+    <script src="../JS/register.js"></script>
 </body>
 </html>

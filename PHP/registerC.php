@@ -44,20 +44,19 @@ class DatabaseRegister
             $surname = $_POST['surname'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $user_type = $_POST['user_type'];
 
             if ($this->emailExists()) {
                 echo "<script>alert('This email is already registered!')</script>";
                 echo "<script>window.location.href = 'register.php';</script>";
                 return;
             } else {
-                $query = "INSERT INTO register(name, surname, email, password, user_type) VALUES ('$name', '$surname','$email', '$password', '$user_type')";
+                $query = "INSERT INTO register(name, surname, email, password, user_type) VALUES ('$name', '$surname','$email', '$password', 'user')";
                 if ($sql = $this->conn->query($query)) {
                     echo "<script>alert('You are successfully registered!');</script>";
                     echo "<script>window.location.href = 'login.php';</script>";
                 } else {
                     echo "<script>alert('This user already exists!');</script>";
-                    echo "<script>window.location.href = 'index.php';</script>";
+                    echo "<script>window.location.href = 'home.php';</script>";
                 }
             }
         }
@@ -123,11 +122,11 @@ class DatabaseRegister
                 if ($row['user_type'] == 'admin') {
 
                     echo "<script>alert('You are successfuly logged in!');</script>";
-                    echo "<script>window.location.href = './Dashboards/dashboard.php';</script>";
+                    echo "<script>window.location.href = 'dashboard.php';</script>";
                 } elseif ($row['user_type'] == 'user') {
 
                     echo "<script>alert('You are successfuly logged in!');</script>";
-                    echo "<script>window.location.href = 'index.php';</script>";
+                    echo "<script>window.location.href = 'home.php';</script>";
 
                 }
 
