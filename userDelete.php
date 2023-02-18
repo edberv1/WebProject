@@ -1,5 +1,5 @@
 <?php 
-    include 'PHP\registerC.php';
+    include 'registerC.php';
     $registeri = new DatabaseRegister();
     $id = $_REQUEST['id'];
     $delete = $registeri->delete($id);

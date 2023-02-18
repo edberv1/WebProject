@@ -1,5 +1,5 @@
 <?php 
-    include 'PHP\DonatePlantsC.php';
+    include 'DonatePlantsC.php';
     $plants = new DatabaseDonatePlants();
     $id = $_REQUEST['id'];
     $delete = $plants->delete($id);

@@ -1,5 +1,5 @@
 <?php 
-    include 'PHP\DonateMoneyC.php';
+    include 'DonateMoneyC.php';
     $money = new DatabaseDonateMoney();
     $id = $_REQUEST['id'];
     $delete = $money->delete($id);
