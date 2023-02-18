@@ -9,17 +9,17 @@
 </head>
 <body>
 
-    <nav>
+<nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
-                <li><a href="home.html">GiveHelp</a></li>
+                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php">GiveHelp</a></li>
             </div>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="weather.html">Extras</a></li>
-            <li> <a href="login.html">Login</a> </li>
-            <li> <a href="register.html">Register</a> </li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="weather.php">Extras</a></li>
+            <li> <a href="login.php">Login</a> </li>
+            <li> <a href="register.php">Register</a> </li>
         </ul>
 
         <ul type="none">
@@ -29,8 +29,16 @@
 
     <main>
         <div class="formStyle">
+
+        <?php
+            include 'registerC.php';
+            $registeri = new DatabaseRegister();
+            $insert = $registeri->insert();
+
+            ?>
+
             <p id="registerForm">Register</p>
-            <form action="./login.html" name="myForm" onsubmit="return validateFormRegister()">
+            <form action="" name="myForm" method="post" onsubmit="return validateFormRegister()">
             <label for="name" class="arrangeLabel" id="pak1">Name: </label><br>
             <input type="text" placeholder="Enter name..." name="name" id="emaili"><br>
             <span class="error" id="errorname"></span><br>
@@ -47,6 +55,12 @@
             <input type="password" placeholder="Enter password..." name="password" id="emaili"><br> 
             <span class="error" id="errorpassword"></span><br>
             
+            <label for="user_type" class="arrangeLabel" id="pak5">Role: </label>
+                <select name="user_type" id="selection" class="test">
+                <option value="user">User</option>
+                <option value="admin">Administrator</option>
+                </select><br>
+
             <input type="submit" value="Register" id="btn"><br>
             </form>
             

@@ -39,17 +39,17 @@ body{
 </head>
 <body>
 
-    <nav>
+<nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
-                <li><a href="home.html">GiveHelp</a></li>
+                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php">GiveHelp</a></li>
             </div>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="weather.html">Extras</a></li>
-            <li> <a href="login.html">Login</a> </li>
-            <li> <a href="register.html">Register</a> </li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="weather.php">Extras</a></li>
+            <li> <a href="login.php">Login</a> </li>
+            <li> <a href="register.php">Register</a> </li>
         </ul>
 
         <ul type="none">

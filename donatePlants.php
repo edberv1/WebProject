@@ -9,23 +9,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul type="none" id="nav">
-                <div class="logo">
-                    <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
-                    <li><a href="home.html">GiveHelp</a></li>
-                </div>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="weather.html">Extras</a></li>
-                <li> <a href="login.html">Login</a> </li>
-                <li> <a href="register.html">Register</a> </li>
-            </ul>
-    
-            <ul type="none">
-                
-            </ul>
-        </nav>
+    <nav>
+        <ul type="none" id="nav">
+            <div class="logo">
+                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php">GiveHelp</a></li>
+            </div>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="weather.php">Extras</a></li>
+            <li> <a href="login.php">Login</a> </li>
+            <li> <a href="register.php">Register</a> </li>
+        </ul>
+
+        <ul type="none">
+            
+        </ul>
+    </nav>
         </header>
 
     <br><br>
@@ -40,7 +40,13 @@
             </div>
 
     <div class="left-side">
-        <form name="myForm" onsubmit="return donatePlants()">
+
+    <?php
+            include 'DonatePlantsC.php';
+            $donatePlants = new DatabaseDonatePlants();
+            $check = $donatePlants->check();
+        ?>
+        <form name="myForm" method="post" onsubmit="return donatePlants()">
         <div>
             <label for="formName" class="form-label">Name: <br></label>
             <input type="text" class="formStyle" id="formName" name="name" placeholder="Name here..."><br>
@@ -96,10 +102,10 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.html"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>
-    <script src="plants.js"></script>
+    <script src="JS\plants.js"></script>
 </body>
 </html>

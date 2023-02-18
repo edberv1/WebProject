@@ -8,17 +8,17 @@
     <title>About</title>
 </head>
 <body>
-    <nav>
+<nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
-                <li><a href="home.html">GiveHelp</a></li>
+                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php">GiveHelp</a></li>
             </div>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="weather.html">Extras</a></li>
-            <li> <a href="login.html">Login</a> </li>
-            <li> <a href="register.html">Register</a> </li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="weather.php">Extras</a></li>
+            <li> <a href="login.php">Login</a> </li>
+            <li> <a href="register.php">Register</a> </li>
         </ul>
 
         <ul type="none">
@@ -36,7 +36,7 @@
             </div>
 
             <div class="bottomAbout">
-                <span class="quote">We combine the benefits of the best local farms with advances made possible by technology to deliver you the best planting experience possible. Plants surrounds us, but we don’t always think about where it comes from or how it got to us. The way we live depends on plants and a clear envoirement.</span>
+                <span class="quote">We combine the benefits of the best local farms with advances made possible by technology to deliver you the best planting experience possible. Plants surrounds us, but we don’t always think about where it comes from or how it got to us. The way we live depends on plants and a clean envoirement.</span>
                 <p>Meet the awesome team behind GiveHelp.We’re solving the gap between the world’s problems, nature and people.</p>
                 <div class="cards">
                     <section class="firstPerson">
@@ -73,7 +73,7 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.html"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>

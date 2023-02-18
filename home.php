@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Home</title>
@@ -11,14 +10,14 @@
     <nav>
         <ul type="none" id="nav">
             <div class="logo">
-                <li><a href="home.html"><img id="logo" src="logo.png" alt=""></a></li>
-                <li><a href="home.html">GiveHelp</a></li>
+                <li><a href="home.php"><img id="logo" src="logo.png" alt=""></a></li>
+                <li><a href="home.php">GiveHelp</a></li>
             </div>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="weather.html">Extras</a></li>
-            <li> <a href="login.html">Login</a> </li>
-            <li> <a href="register.html">Register</a> </li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="weather.php">Extras</a></li>
+            <li> <a href="login.php">Login</a> </li>
+            <li> <a href="register.php">Register</a> </li>
         </ul>
 
         <ul type="none">
@@ -37,7 +36,6 @@
 
         <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
               <img alt="img1" src="https://wallpapercave.com/wp/wp6966643.jpg" style="width:100%">
@@ -53,13 +51,11 @@
               <img alt="img3" src="https://wallpapercave.com/wp/wp1990734.jpg" style="width:100%">
             </div>
           
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
-          
-          <!-- The dots/circles -->
+        
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -74,9 +70,9 @@
         <div class="leftcolum">
             
             <img src="https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees-with-sun-shining-through-branches_181624-20728.jpg?w=1380&t=st=1670362056~exp=1670362656~hmac=5f0122b2bd68212fcb536beb4b100968be01a7289d11115964b12c3eef79f03d" class="clothes" alt="plant"><br><br>
-            <a href="donateclothes.html">
+            <a href="donateclothes.php">
                 
-            <button type="button" class="button"> <a class="btnA" href="donatePlants.html"> Donate Plants </a></button><br><br>
+            <button type="button" class="button"> <a class="btnA" href="donatePlants.php"> Donate Plants </a></button><br><br>
             </a>
                 
     
@@ -85,9 +81,9 @@
         <div class="rightcolum">
         <img class="money" src="https://img.freepik.com/free-photo/high-angle-two-stacks-coins-with-plants-copy-space_23-2148803918.jpg?w=1380&t=st=1670362241~exp=1670362841~hmac=bb61d418db9e79f50b0acae77fe88ce23551168143fa50f4852072406710f2f7" alt="money"><br><br>
             
-            <a  href="donatemoney.html">
+            <a  href="donatemoney.php">
                 
-            <button type="button" class="button"> <a  class="btnA" href="donatemoney.html">Donate Money</a></button><br><br>
+            <button type="button" class="button"> <a  class="btnA" href="donatemoney.php">Donate Money</a></button><br><br>
             </a>
             
         
@@ -105,7 +101,7 @@
         </div>
         <div class="div2">
             <ul type="none">
-                <li><a href="home.html"><img src="logo.png" alt=""></a></li>
+                <li><a href="home.php"><img src="logo.png" alt=""></a></li>
             </ul>
         </div>
     </footer>

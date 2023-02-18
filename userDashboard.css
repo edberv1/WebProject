@@ -1,0 +1,127 @@
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: wheat;
+    }
+    .navbar {
+      background-color: wheat;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 20px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    form {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"]{
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: gainsboro;
+    }
+    
+    input[type="number"] {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      background-color: gainsboro;
+    }
+    
+    input[type="number"]:focus {
+      border-color: #66afe9;
+      box-shadow: 0 0 6px #66afe9;
+    }
+
+    button[type="submit"] {
+      background-color: green;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: gainsboro;
+      
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: green;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    a.btn {
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .btn1{
+      color: #F55050;
+
+    }
+
+    .btn2{
+      color: #3C84AB;
+
+    }
+
+    #selektimi {
+      padding: 0.5em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 0.25em;
+      background-color: gainsboro;
+      color: #444;
+    }
+    
+    #selektimi:focus {
+      outline: none;
+      border-color: green;
+      box-shadow: 0 0 0 2px rgba(0, 119, 192, 0.2);
+    }
+  
