@@ -1,5 +1,6 @@
 <?php
 
+ session_start();
 class DatabaseRegister
 {
     public $server = 'localhost';
@@ -120,11 +121,11 @@ class DatabaseRegister
                 $row = mysqli_fetch_array($result);
 
                 if ($row['user_type'] == 'admin') {
-
+                    $_SESSION['user_type'] = 'admin';
                     echo "<script>alert('You are successfuly logged in!');</script>";
                     echo "<script>window.location.href = 'dashboard.php';</script>";
                 } elseif ($row['user_type'] == 'user') {
-
+                    $_SESSION['user_type'] = 'user';
                     echo "<script>alert('You are successfuly logged in!');</script>";
                     echo "<script>window.location.href = 'home.php';</script>";
 

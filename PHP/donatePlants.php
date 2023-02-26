@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,28 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonatePlants</title>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
     <link rel="stylesheet" href="../CSS/plants.css">
 </head>
 <body>
-    <header>
-    <nav>
-        <ul type="none" id="nav">
-            <div class="logo">
-                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
-                <li><a href="home.php">GiveHelp</a></li>
-            </div>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="weather.php">Extras</a></li>
-            <li> <a href="login.php">Login</a> </li>
-            <li> <a href="register.php">Register</a> </li>
-        </ul>
 
-        <ul type="none">
-            
-        </ul>
-    </nav>
-        </header>
+<div class="topnav" id="myTopnav">
+  <a href="home.php"><img src="../Assets/logo.png" id="logo"></a>
+  <a href="home.php">Home</a>
+  <a href="about.php">About</a>
+  <a href="weather.php">Extras</a>
+  <?php
+                    if (!(isset($_SESSION['user_type']))) {
+                        echo "<a class='ula' id='pad' href='login.php'>Login</a>";
+                    } else if (isset($_SESSION['user_type']) == 'user') {
+                        echo "<a class='ula' id='pad' href='logout.php'>Logout</a>";
+                    }
+                    ?> 
+  <a href="register.php">Register</a> 
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars">↓</i>
+  </a>
+</div>
+
 
     <br><br>
 
@@ -68,10 +79,11 @@
 
         </div><br>
         <div>
-            <label for="inputPhone" class="form-label">Phone Number:<br></label>
-            <input type="number" class="formStyle" id="inputNumber" name="number" placeholder="+383 ..."><br>
-            <span class="error" id="errornumber"></span>
+                <label for="inputPhone" class="form-label">Phone Number:<br></label>
+                <input type="number" class="formStyle" id="inputNumber" name="number" placeholder="044..."><br>
+                <span class="error" id="errornumber"></span>
         </div><br>
+        
         
         <div>
             <label for="inputPlants" class="form-label">Plant name:<br></label>
@@ -79,7 +91,8 @@
             <span class="error" id="errortext"></span>
         </div><br>
         
-        <input type="submit" name="submit" value="Donate" id="dnButt"><br> <br></input>
+        <input type="submit" name="submit" value="Donate" class="btn green"></input>
+        
         </form>
 
     </div>
@@ -91,21 +104,39 @@
     
     <!-- Footeri -->
     
-    <footer>
-        <div class="div1">
-            <ul type="none">
-                <li><h1>GiveHelp</h1></li>
-                <p>"GiveHelp" is a website for people that want to help
-                    the nature by donating money or plants. After their donation our organisation plants them where it is needed the most.</p>
+    <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
                 
-            </ul>
-        </div>
-        <div class="div2">
-            <ul type="none">
-                <li><a href="home.php"><img src="../Assets/logo.png" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="home.php">Home</a>
+
+					<a href="about.php">About</a>
+
+					<a href="weather.php">Extras</a>
+
+					<a href="login.php">Login</a> 
+
+					<a href="register.php">Register</a> 
+
+                    
+				</p>
+                <a href="home.php"><img src="../ASSETS/logo.png"></a> 
+				<p>GiveHelp &copy; 2023</p>
+			</div>
+
+		</footer>
     <script src="../JS/plants.js"></script>
 </body>
 </html>

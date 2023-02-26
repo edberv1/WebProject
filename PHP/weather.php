@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,31 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/home.css">
     <title>Weather</title>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
     <style>
         input{
-    margin-top: 10px;
-    background-color: gainsboro;
-    border-radius: 20px;
-    width: 250px;
-    height: 35px;
+            -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: 15px/1 'Open Sans', sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    max-width: 500px;
+    background-color: #ddd;
     border: none;
-    padding-left: 14px;
+    padding: 10px 11px 11px 11px;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box; 
 }
-button {
-    margin-top: 20px;
-    width: 250px;
-    border-radius: 20px;
-    background-color: green;
-    color: white;
-    height: 35px;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    
+.btn {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 3px;
+  margin: 8px 8px 8px 8px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: green;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  position: relative;
 }
-button:hover{
-color: wheat;
+.btn:hover, .btn:focus {
+  opacity: 0.8;
 }
+.btn:active {
+  -webkit-transform: scale(0.80);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+  transform: scale(0.80);
+}
+.btn.block {
+  display: block !important;
+}
+.btn.circular {
+border-radius: 50em !important;
+}
+
 body{
     background-image: url("https://wallpaperaccess.com/full/6451924.jpg");
 
@@ -39,23 +85,23 @@ body{
 </head>
 <body>
 
-<nav>
-        <ul type="none" id="nav">
-            <div class="logo">
-                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
-                <li><a href="home.php">GiveHelp</a></li>
-            </div>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="weather.php">Extras</a></li>
-            <li> <a href="login.php">Login</a> </li>
-            <li> <a href="register.php">Register</a> </li>
-        </ul>
-
-        <ul type="none">
-            
-        </ul>
-    </nav>
+<div class="topnav" id="myTopnav">
+  <a href="home.php"><img src="../Assets/logo.png" id="logo"></a>
+  <a href="home.php">Home</a>
+  <a href="about.php">About</a>
+  <a href="weather.php">Extras</a>
+  <?php
+                    if (!(isset($_SESSION['user_type']))) {
+                        echo "<a class='ula' id='pad' href='login.php'>Login</a>";
+                    } else if (isset($_SESSION['user_type']) == 'user') {
+                        echo "<a class='ula' id='pad' href='logout.php'>Logout</a>";
+                    }
+                    ?> 
+  <a href="register.php">Register</a> 
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars">↓</i>
+  </a>
+</div>
 
     <center>
 
@@ -75,6 +121,9 @@ body{
     </center>
 
 
+
     <script src="../JS/weather.js"></script> 
 </body>
 </html>
+
+

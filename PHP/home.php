@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/home.css">
     <title>Home</title>
+
 </head>
 <body>
-    <nav>
-        <ul type="none" id="nav">
-            <div class="logo">
-                <li><a href="home.php"><img id="logo" src="../Assets/logo.png" alt=""></a></li>
-                <li><a href="home.php">GiveHelp</a></li>
-            </div>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="weather.php">Extras</a></li>
-            <li> <a href="login.php">Login</a> </li>
-            <li> <a href="register.php">Register</a> </li>
-        </ul>
 
-        <ul type="none">
-            
-        </ul>
-    </nav>
+<div class="topnav" id="myTopnav">
+  <a href="home.php"><img src="../Assets/logo.png" id="logo"></a>
+  <a href="home.php">Home</a>
+  <a href="about.php">About</a>
+  <a href="weather.php">Extras</a>
+  <?php
+                    if (!(isset($_SESSION['user_type']))) {
+                        echo "<a class='ula' id='pad' href='login.php'>Login</a>";
+                    } else if (isset($_SESSION['user_type']) == 'user') {
+                        echo "<a class='ula' id='pad' href='logout.php'>Logout</a>";
+                    }
+                    ?> 
+  <a href="register.php">Register</a> 
+  <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars">↓</i>
+  </a>
+</div>
+
 
     <div class="heading">
 
@@ -70,41 +74,51 @@
         <div class="leftcolum">
             
             <img src="https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees-with-sun-shining-through-branches_181624-20728.jpg?w=1380&t=st=1670362056~exp=1670362656~hmac=5f0122b2bd68212fcb536beb4b100968be01a7289d11115964b12c3eef79f03d" class="clothes" alt="plant"><br><br>
-            <a href="donatePlants.php">
-                
-            <button type="button" class="button"> <a class="btnA" href="donatePlants.php"> Donate Plants </a></button><br><br>
-            </a>
+            <a href="donatePlants.php" class="btn green">Donate Plants</a> 
                 
     
         </div>
         
         <div class="rightcolum">
         <img class="money" src="https://img.freepik.com/free-photo/high-angle-two-stacks-coins-with-plants-copy-space_23-2148803918.jpg?w=1380&t=st=1670362241~exp=1670362841~hmac=bb61d418db9e79f50b0acae77fe88ce23551168143fa50f4852072406710f2f7" alt="money"><br><br>
-            
-            <a  href="donateMoney.php">
-                
-            <button type="button" class="button"> <a  class="btnA" href="donateMoney.php">Donate Money</a></button><br><br>
-            </a>
-            
-        
+          <a href="donateMoney.php" class="btn green">Donate Money</a>       
         </div>
     </main>
 
-    <footer>
-        <div class="div1">
-            <ul type="none">
-                <li><h1>GiveHelp</h1></li>
-                <p>"GiveHelp" is a website for people that want to help
-                    the nature by donating money or plants. After their donation our organisation plants them where it is needed the most.</p>
+
+    <footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
                 
-            </ul>
-        </div>
-        <div class="div2">
-            <ul type="none">
-                <li><a href="home.php"><img src="../Assets/logo.png" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="home.php">Home</a>
+
+					<a href="about.php">About</a>
+
+					<a href="weather.php">Extras</a>
+
+					<a href="login.php">Login</a> 
+
+					<a href="register.php">Register</a> 
+
+                    
+				</p>
+                <a href="home.php"><img src="../ASSETS/logo.png"></a> 
+				<p>GiveHelp &copy; 2023</p>
+			</div>
+
+		</footer>
 
     <script src="../JS/a.js"></script>
 </body>

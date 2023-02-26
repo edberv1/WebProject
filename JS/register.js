@@ -18,8 +18,8 @@ function validateFormRegister(){
         document.getElementById('errorpassword').innerHTML="Please enter a valid password";
         return false;
        }
-       else{
-        document.getElementById('errorpassword').innerHTML="";
-        alert("You've logged in successfully, you can Donate now! Thank you!");  
-       }
+    //    else{
+    //     document.getElementById('errorpassword').innerHTML="";
+    //     alert("You've logged in successfully, you can Donate now! Thank you!");  
+    //    }
 }

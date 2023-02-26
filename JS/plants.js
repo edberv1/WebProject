@@ -4,7 +4,7 @@ function donatePlants() {
     var number = document.forms["myForm"]["number"].value;
 
     var emailRegex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var numberRegex =/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{5,6}$/im;
+    var numberRegex =/^[0-9]{9}$/;
 
 
     if(!(emailRegex.test(email))) {

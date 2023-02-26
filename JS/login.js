@@ -22,9 +22,9 @@ var passwordRegex=/^[A-Z]{1}[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]{6}$/;
     document.getElementById('errorpassword').innerHTML="Please enter a valid password";
     return false;
    }
-   else{
-    document.getElementById('errorpassword').innerHTML="";
-    alert("You have logged in successfully, you can Donate now! Thank you!");  
-   }
+//    else{
+//     document.getElementById('errorpassword').innerHTML="";
+//     alert("You have logged in successfully, you can Donate now! Thank you!");  
+//    }
   
 }  

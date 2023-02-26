@@ -83,6 +83,7 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      background-color: rgb(165, 162, 162);
     }
     th, td {
       text-align: left;
@@ -93,7 +94,7 @@
       color: #fff;
     }
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: rgb(231, 226, 226);
     }
     a.btn {
       margin-right: 10px;
@@ -101,12 +102,12 @@
       font-weight: bolder;
     }
     .btn1{
-      color: #F55050;
+      color: firebrick;
 
     }
 
     .btn2{
-      color: #3C84AB;
+      color: green;
 
     }
 
